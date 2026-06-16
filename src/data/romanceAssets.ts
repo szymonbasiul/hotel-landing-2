@@ -21,10 +21,11 @@ export const galleryAssets = {
 } as const;
 
 export const placeholderImages = {
-  candles: "/media/romance/gallery/placeholder-candles.jpg",
-  spa: "/media/romance/gallery/placeholder-spa.jpg",
-  breakfast: "/media/romance/gallery/placeholder-breakfast.jpg",
-  flowers: "/media/romance/gallery/placeholder-flowers.jpg",
-  wine: "/media/romance/gallery/placeholder-wine.jpg",
-  terrace: "/media/romance/gallery/placeholder-terrace.jpg",
+  // Use existing local images from public/media to ensure they load reliably.
+  candles: galleryAssets.celebrationCandle,
+  spa: storyAssets.luxuryBedroom,
+  breakfast: storyAssets.cozyRoom,
+  flowers: storyAssets.coupleEmbrace,
+  wine: storyAssets.candlelightDinner,
+  terrace: storyAssets.terraceCouple,
 } as const;
